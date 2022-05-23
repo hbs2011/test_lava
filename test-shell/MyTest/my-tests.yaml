@@ -1,0 +1,12 @@
+metadata:
+    format: Lava-Test Test Definition 1.0
+    name: my-tests
+    description: "my debug tests."
+    maintainer:
+        - ya.yang@blueoceansmart.org
+
+run:
+    steps:
+        - lava-test-case chmod_bst_test --shell chmod 777 bst-test
+        - lava-test-case my_first__case --shell ./bst-test case/Driver/BSP_Driver/CPLD/case1
+
